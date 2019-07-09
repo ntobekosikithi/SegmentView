@@ -1,0 +1,46 @@
+    1|       |//
+    2|       |//  SegmentViewTests.swift
+    3|       |//  SegmentViewTests
+    4|       |//
+    5|       |//  Created by Ntobeko Sikithi on 2019/07/09.
+    6|       |//  Copyright © 2019 Ntobeko Sikithi. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |import XCTest
+   10|       |@testable import SegmentView
+   11|       |
+   12|       |class SegmentViewTests: XCTestCase {
+   13|       |
+   14|       |    var segView: SegmentView!
+   15|       |    
+   16|      4|    override func setUp() {
+   17|      4|        segView = SegmentView()
+   18|      4|    }
+   19|       |    
+   20|      1|    func testAdd() {
+   21|      1|        XCTAssertEqual(segView.add(a: 1, b: 1), 2)
+   22|      1|    }
+   23|       |    
+   24|      1|    func testSub() {
+   25|      1|        XCTAssertEqual(segView.sub(a: 2, b: 1), 1)
+   26|      1|    }
+   27|       |
+   28|       |
+   29|      4|    override func tearDown() {
+   30|      4|        // Put teardown code here. This method is called after the invocation of each test method in the class.
+   31|      4|    }
+   32|       |
+   33|      1|    func testExample() {
+   34|      1|        // This is an example of a functional test case.
+   35|      1|        // Use XCTAssert and related functions to verify your tests produce the correct results.
+   36|      1|    }
+   37|       |
+   38|      1|    func testPerformanceExample() {
+   39|      1|        // This is an example of a performance test case.
+   40|     10|        self.measure {
+   41|     10|            // Put the code you want to measure the time of here.
+   42|     10|        }
+   43|      1|    }
+   44|       |
+   45|       |}
+
