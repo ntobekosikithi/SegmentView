@@ -1,0 +1,6 @@
+coverage_service: cobertura_xml
+xcodeproj: SegmentView.xcodeproj
+scheme: SegmentView
+output_directory: reports
+ignore:
+  - SegmentViewTests/*
