@@ -15,6 +15,7 @@
 		4D3C54FC22D484A0004F5021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3C54FA22D484A0004F5021 /* Main.storyboard */; };
 		4D3C54FE22D484A1004F5021 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D3C54FD22D484A1004F5021 /* Assets.xcassets */; };
 		4D3C550122D484A1004F5021 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3C54FF22D484A1004F5021 /* LaunchScreen.storyboard */; };
+		4D3C550722D48824004F5021 /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3C550622D48824004F5021 /* SegmentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		4D3C54FD22D484A1004F5021 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D3C550022D484A1004F5021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D3C550222D484A1004F5021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D3C550622D48824004F5021 /* SegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				4D3C54D922D48397004F5021 /* SegmentView.h */,
 				4D3C54DA22D48397004F5021 /* Info.plist */,
+				4D3C550622D48824004F5021 /* SegmentView.swift */,
 			);
 			path = SegmentView;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					4D3C54D522D48397004F5021 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					4D3C54DE22D48397004F5021 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -260,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D3C550722D48824004F5021 /* SegmentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +440,7 @@
 		4D3C54EB22D48397004F5021 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -452,6 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.ntobeko.SegmentView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +467,7 @@
 		4D3C54EC22D48397004F5021 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -485,6 +493,7 @@
 		4D3C54EE22D48397004F5021 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6JBXWQ47V;
 				INFOPLIST_FILE = SegmentViewTests/Info.plist;
@@ -503,6 +512,7 @@
 		4D3C54EF22D48397004F5021 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6JBXWQ47V;
 				INFOPLIST_FILE = SegmentViewTests/Info.plist;

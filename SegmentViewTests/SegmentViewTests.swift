@@ -11,9 +11,20 @@ import XCTest
 
 class SegmentViewTests: XCTestCase {
 
+    var segView: SegmentView!
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        segView = SegmentView()
     }
+    
+    func testAdd() {
+        XCTAssertEqual(segView.add(a: 1, b: 1), 2)
+    }
+    
+    func testSub() {
+        XCTAssertEqual(segView.sub(a: 2, b: 1), 1)
+    }
+
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
